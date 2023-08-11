@@ -13,7 +13,143 @@ body {
 }
 
 .block_3_icons {
+  width: 100%;
+  min-width: 320px;
+  &,
   & * {
     box-sizing: border-box;
+  }
+
+  padding: 55px 0;
+  background-color: #fff;
+
+  @include lg {
+    padding: 67px 0 82px;
+  }
+
+  @include md {
+    padding: 53px 0 45px;
+  }
+
+  @include sm {
+    padding: 29px 0 28px;
+  }
+
+  @include xs {
+    padding: 22px 0 44px;
+  }
+}
+
+.block_3_icons__container {
+  max-width: 1378px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include lg {
+    max-width: 1185px;
+  }
+
+  @include md {
+    max-width: 978px;
+  }
+
+  @include sm {
+    max-width: 748px;
+  }
+
+  @include xs {
+    width: 50%;
+  }
+
+  @include xxs {
+    width: 260px;
+  }
+}
+
+.block_3_icons__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @include xs {
+    flex-direction: column;
+    gap: 70px 0;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.block_3_icons__item {
+  flex-shrink: 0;
+  width: 316px;
+
+  @include lg {
+    width: 272px;
+  }
+
+  @include md {
+    width: 242px;
+  }
+
+  @include sm {
+    width: 206px;
+  }
+
+  @include xs {
+    width: 100%;
+  }
+}
+
+.block_3_icons__img {
+  width: 100%;
+  margin-bottom: 33px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @include lg {
+    margin-bottom: 30px;
+  }
+
+  @include md {
+    width: 220px;
+    margin: 0 11px 36px;
+  }
+
+  @include sm {
+    width: 100%;
+    margin: 0 0 13px 0;
+  }
+
+  @include xs {
+    margin-bottom: 15px;
+  }
+}
+
+.block_3_icons__title {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+
+  @include lg {
+    font-size: 22px;
+  }
+
+  @include md {
+    font-size: 20px;
+  }
+
+  @include sm {
+    font-size: 16px;
   }
 }
